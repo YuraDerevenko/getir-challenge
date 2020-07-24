@@ -4,6 +4,7 @@
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
+    "prestart": "tsc",
     "start": "node .",
     "compile": "tsc",
     "test": "npm run test:unit && npm run test:e2e",
