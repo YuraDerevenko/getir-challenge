@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
+    "start": "ts-node -r tsconfig-paths/register  .",
     "test": "npm run test:unit && npm run test:e2e",
     "test:e2e": "NODE_ENV=test mocha -r ts-node/register -r tsconfig-paths/register 'src/test/e2eTestSetup.ts' 'src/features/*/*/*/**.e2e.ts' --exit",
     "test:unit": "NODE_ENV=test mocha -r ts-node/register -r tsconfig-paths/register 'src/test/unitTestSetup.ts' 'src/features/*/**.spec.ts' --exit",
