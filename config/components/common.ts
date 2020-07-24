@@ -3,7 +3,7 @@ import { Schema, object, number, string } from '@hapi/joi'
 const validEnvs = ['development', 'production', 'test', 'acceptance', 'staging']
 
 const envVarsSchema: Schema = object({
-  APP_PORT: number().required(),
+  APP_PORT: number().default(5000),
   NODE_ENV: string()
     .valid(...validEnvs)
     .required(),
