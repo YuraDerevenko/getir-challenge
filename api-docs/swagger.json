@@ -1,0 +1,66 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Record API",
+    "description": "Getir challange API description.",
+    "version": "1.0.0"
+  },
+  "host": "localhost:3000",
+  "basePath": "/api/v1",
+  "schemes": ["http"],
+  "paths": {
+    "/record": {
+      "post": {
+        "summary": "Returns a list of records.",
+        "description": "Returns a list of records by provided search params in body.",
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "record",
+            "schema": {
+              "type": "object",
+              "required": ["startDate", "endDate", "minCount", "maxCount"],
+              "properties": {
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
+                  "type": "string"
+                },
+                "minCount": {
+                  "type": "number"
+                },
+                "maxCount": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Records",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "key": {
+                  "type": "string",
+                  "description": "Records key"
+                },
+                "totalCount": {
+                  "type": "integer",
+                  "description": "Records counts field sum"
+                },
+                "createdAt": {
+                  "type": "string",
+                  "description": "Records created datetime"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

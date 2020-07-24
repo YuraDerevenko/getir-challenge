@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "sourceMap": false,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "files": [
+    "./node_modules/@types/mocha/index.d.ts",
+    "./node_modules/@types/node/index.d.ts"
+  ],
+  "include": ["*.ts", "config/**/*.ts", "src/**/*.ts"],
+  "exclude": [
+    "src/test",
+    "node_modules",
+    "src/**/*.spec.ts",
+    "src/*/*/*/**.spec.ts",
+    "src/features/*/*/*/**.e2e.ts"
+  ]
+}
