@@ -5,10 +5,10 @@ import morgan from 'morgan'
 import cors from 'cors'
 import helmet from 'helmet'
 
-import ApiRouter from '@/router'
-import { notFoundHandler, errorHandler } from '@/middlewares'
+import ApiRouter from './router'
+import { notFoundHandler, errorHandler } from './middlewares'
 
-import { common } from 'config'
+import { common } from '../config'
 
 class App {
   public app: express.Express

@@ -1,6 +1,6 @@
 import { MongoClient } from 'mongodb'
-import { logger } from '@/utils'
-import { common } from 'config'
+import { logger } from '../utils'
+import { common } from '../../config'
 
 const { MONGO_URI, DB_NAME } = common
 

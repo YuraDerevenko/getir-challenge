@@ -1,7 +1,7 @@
 import { OK } from 'http-status'
 import { Response } from 'express'
 
-import { CODES, DEFAULT_MESSAGES } from '@/constants'
+import { CODES, DEFAULT_MESSAGES } from '../constants'
 
 export const responseSender = (res: Response, payload: {}, statusCode: number = OK): Response =>
   res.status(statusCode).send(payload)

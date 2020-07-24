@@ -1,4 +1,4 @@
-import { MongoDb } from '@/database'
+import { MongoDb } from '../../database'
 
 interface IGetAllFilter {
   startDate: Date;

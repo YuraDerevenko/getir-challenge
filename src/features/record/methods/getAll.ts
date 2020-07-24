@@ -1,6 +1,6 @@
 import { Response, Request, NextFunction } from 'express'
-import { successResponse } from '@/utils'
-import RecordService from '@/features/record/record.service'
+import { successResponse } from '../../../utils'
+import RecordService from '../record.service'
 
 
 export default async (req: Request, res: Response, next: NextFunction) => {

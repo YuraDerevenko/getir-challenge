@@ -1,5 +1,5 @@
-import { wrap } from '@/middlewares'
+import { wrap } from '../../../middlewares'
 
-import getAll from '@/features/record/methods/getAll'
+import getAll from './getAll'
 
 export const getAllHandler = wrap(getAll)

@@ -1,9 +1,9 @@
 import { Router, RequestHandler } from 'express'
 
-import { requestValidate } from '@/middlewares'
-import { getAllSchema } from '@/features/record/record.schema'
+import { requestValidate } from '../../middlewares'
+import { getAllSchema } from './record.schema'
 
-import { getAllHandler } from '@/features/record/methods'
+import { getAllHandler } from './methods'
 
 class RecordRouterV1 {
   public router: Router

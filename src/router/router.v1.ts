@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import RecordRouterV1 from '@/features/record/record.router.v1'
+import RecordRouterV1 from '../features/record/record.router.v1'
 
 class RouterV1 {
   public router: Router

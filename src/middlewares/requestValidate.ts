@@ -1,7 +1,7 @@
 import { Response, Request, NextFunction } from 'express'
 
 import { Schema } from '@hapi/joi'
-import { CODES } from '@/constants'
+import { CODES } from '../constants'
 
 export const requestValidate = (schema: Schema) => async (req: Request, res: Response, next: NextFunction) => {
   try {

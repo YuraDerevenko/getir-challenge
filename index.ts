@@ -1,10 +1,11 @@
 import { Server } from 'http'
 import { AddressInfo } from 'net'
-import app from '@/app'
+import app from './src/app'
 
-import { MongoDb } from '@/database'
-import { logger } from '@/utils'
-import { common } from 'config'
+import { MongoDb } from './src/database'
+import { logger } from './src/utils'
+import { common } from './config'
+
 
 const { APP_PORT } = common
 

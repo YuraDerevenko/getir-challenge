@@ -1,8 +1,8 @@
 import { Router, Request, Response, NextFunction, RequestHandler } from 'express'
 import { serve, setup } from 'swagger-ui-express'
-import RouterV1 from '@/router/router.v1'
+import RouterV1 from './router.v1'
 
-import swaggerDocument from 'api-docs/swagger.json'
+import swaggerDocument from '../../api-docs/swagger.json'
 
 class ApiRouter {
   public router: Router

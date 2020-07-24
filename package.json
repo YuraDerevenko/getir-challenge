@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "start": "ts-node -r tsconfig-paths/register  .",
+    "start": "node -r tsconfig-paths/register  .",
+    "compile": "tsc",
     "test": "npm run test:unit && npm run test:e2e",
     "test:e2e": "NODE_ENV=test mocha -r ts-node/register -r tsconfig-paths/register 'src/test/e2eTestSetup.ts' 'src/features/*/*/*/**.e2e.ts' --exit",
     "test:unit": "NODE_ENV=test mocha -r ts-node/register -r tsconfig-paths/register 'src/test/unitTestSetup.ts' 'src/features/*/**.spec.ts' --exit",
@@ -34,9 +35,6 @@
     "mongodb": "^3.5.9",
     "morgan": "^1.10.0",
     "swagger-ui-express": "^4.1.4",
-    "ts-node": "^8.10.2",
-    "tsconfig-paths": "^3.9.0",
-    "typescript": "^3.9.7",
     "winston": "^3.3.3"
   },
   "devDependencies": {
@@ -49,7 +47,7 @@
     "@types/mocha": "^8.0.0",
     "@types/mongodb": "^3.5.25",
     "@types/morgan": "^1.9.1",
-    "@types/node": "^14.0.24",
+    "@types/node": "10.10.3",
     "@types/sinon": "^9.0.4",
     "@types/supertest": "^2.0.10",
     "@types/swagger-ui-express": "^4.1.2",
@@ -58,6 +56,9 @@
     "mocha": "^8.0.1",
     "nodemon": "^2.0.4",
     "sinon": "^9.0.2",
-    "supertest": "^4.0.2"
+    "supertest": "^4.0.2",
+    "ts-node": "^8.10.2",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.9.7"
   }
 }

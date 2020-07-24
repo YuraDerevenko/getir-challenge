@@ -1,7 +1,7 @@
 import { INTERNAL_SERVER_ERROR } from 'http-status'
 import { Response, Request, NextFunction } from 'express'
-import { logger, responseSender } from '@/utils'
-import { CODES, DEFAULT_MESSAGES } from '@/constants'
+import { logger, responseSender } from '../utils'
+import { CODES, DEFAULT_MESSAGES } from '../constants'
 
 const { NODE_ENV } = process.env
 
