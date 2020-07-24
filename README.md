@@ -5,7 +5,8 @@ you need install node.js 12.x version
 
 ### local development
 1) install dependencies - `npm i`
-2) run app - `npm run dev`
+2) use `.env.example` as template and crete `.env.development` - for developing `.env.test` - for testing
+3) run app - `npm run dev`
 
 ### run test
 - to run unit test use - `npm run test:unit`
